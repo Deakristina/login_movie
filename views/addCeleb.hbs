@@ -1,0 +1,34 @@
+
+{{#if successAlert}}
+  <div class="alert alert-success text-center" role="alert">
+    Your favourite celebrity has been sucessfully added to your list!
+  </div>
+{{/if}}
+
+{{#if celebExists}}
+  <div class="alert alert-danger text-center" role="alert">
+    Your favourite celebrity has already existed in your list!
+  </div>
+{{/if}}
+
+{{#if errorMessage}}
+  <div class="alert alert-danger text-center" role="alert">
+    You need to fill in all the required fields to add a celebrity!
+  </div>
+{{/if}}
+
+<h2 class="celebrity-add-title">Add your favourite celebrities to your list!</h2>
+
+<form action="/add-celebrities" method="POST" class="celebrity-add-container">
+<div class="form-one-celeb">
+  <input type="text" class="input-create input-most" name="firstname" placeholder="Enter First Name">
+  <input type="text" class="input-create input-most" name="lastname" placeholder="Enter Last Name">
+  <input type="text" class="input-create input-most" name="nationality" placeholder="Enter Nationality">
+  </div>
+  <div class="form-two-celeb">
+  <input type="submit" value="Add to List" id="submit-login" class="submit-btn">
+  </div>
+</form>
+
+ 
+

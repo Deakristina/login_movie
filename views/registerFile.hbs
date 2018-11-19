@@ -1,0 +1,46 @@
+
+  {{#if userNameExists}}
+    <div class="alert alert-danger text-center" role="alert">
+      Username or Email already exists!
+    </div>
+  {{/if}}
+
+  {{#if errorMessage}}
+    <div class="alert alert-danger text-center" role="alert">
+      Please fill in all required fields
+    </div>
+  {{/if}}
+
+<div class="container-register">
+  <div class="title-app">
+    <h1 class="top-title">Register your account</h1>
+  </div>
+  <div class="login-page-container">
+    <form action="/register" method="post" class="sign-form" id="register-form">
+      <label for="username">Username</label>
+      <input id="text" type="text" name="username" required class="input-login"> 
+        
+      <label for="password">Password</label>
+      <input id="password" type="password" name="password" required class="input-login" onkeyup="validatePassword(this.value)">
+      <ul class="requirement-group">
+      <li class="requirement-item number"><i class="fas fa-check"></i> Password must at least has 1 number</li>
+      <li class="requirement-item capital"><i class="fas fa-check"></i> Password must at least has 1 capital letter</li>
+      <li class="requirement-item characters"><i class="fas fa-check"></i> Password must at least 4 characters long</li>
+    </ul>
+
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" required class="input-login">
+      <input type="submit" value="Register" class="submit-btn inactive" id="register-btn">
+      
+
+    </form>
+  </div>
+  
+
+  {{!-- <div class="container-requirement">
+    <ul class="requirement-group">
+      <li class="requirement-item number"><i class="fas fa-check"></i> Password must at least has 1 number</li>
+      <li class="requirement-item capital"><i class="fas fa-check"></i> Password must at least has 1 capital letter</li>
+      <li class="requirement-item characters"><i class="fas fa-check"></i> Password must at least 4 characters long</li>
+    </ul>
+  </div> --}}

@@ -1,0 +1,24 @@
+<h2 class="celebrity-add-title">Find your favourite celebrities</h2>
+
+
+
+<form action="/find-celebrities" method="POST" class="search-form">
+  <input type="text" class="input-text input-most" name="searchCeleb" placeholder="Search By First/Last Name or Nationality">
+  <input type="submit" value="Search" class="submit-btn-search submit-btn">
+</form>
+
+
+<div class="find-container celeb-find-container">
+{{#each showCeleb}}
+ <div class="item-container celeb">
+    <h2> <strong>Name : </strong> {{this.firstname}} {{this.lastname}}</h2>
+    <h2> <strong>Nationality : </strong> {{this.nationality}} </h2>
+  </div>
+{{/each}}
+</div>
+
+{{#if errorMessage}}
+  <div class="alert alert-warning text-center" role="alert">
+    The celebrity you're looking for is not yet in the list!
+  </div>
+{{/if}}

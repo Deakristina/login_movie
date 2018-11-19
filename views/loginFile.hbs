@@ -1,0 +1,38 @@
+
+  {{#if incorrectCombi}}
+    <div class="alert alert-danger text-center" role="alert">
+      Combination of username and password is incorrect!
+    </div>
+  {{/if}}
+
+  {{#if sucessRegistration}}
+    <div class="alert alert-success text-center" role="alert">
+      You've been successfully registered! Continue to login. 
+    </div>
+  {{/if}}
+
+  {{#if successLogOut}}
+    <div class="alert alert-success text-center" role="alert">
+      You've been successfully logged out. See you soon! 
+    </div>
+  {{/if}}
+
+  <div class="title-app">
+    <h1 class="top-title">Top Movies Library</h1>
+  </div>
+  <div class="login-page-container">
+    <div id="login-container">
+      <form action="/login" method="post" id="login-form" class="sign-form">
+        <label for="username">Username</label>
+        <input id="text" type="text" name="username" class="input-login">
+
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password"  class="input-login">
+        <input type="submit" value="Log In" id="submit-login" class="submit-btn">
+      </form>
+    </div>
+
+    <div class="no-login">
+      <h5 class="register-begin">Don't have an account? <span> <a href="register">Register here</a> </span> </h5>
+    </div>
+  </div>  

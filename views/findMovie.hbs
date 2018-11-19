@@ -1,0 +1,24 @@
+<h2 class="celebrity-add-title">Find your favourite movie</h2>
+
+<form action="/find-movie" method="POST" class="search-form">
+  <input type="text" name="searchMovie" class="input-text input-most" placeholder="Search by Title, Year or Director"/>
+  <input type="submit" class="submit-btn-search submit-btn" value="Search">
+</form>
+
+<div class="find-container">
+  {{#each showMovies}}
+  <div class="item-container movie">
+    <h2> <strong>Title :</strong> {{this.title}}</h2> 
+    <h3> <strong>Director :</strong> {{this.director}} </h3>
+    <h3> <strong>Year :</strong> {{this.year}} </h3>
+    <h3> <strong>Rate :</strong>  {{this.rate}} </h3>
+    <h3> <strong>Duration :</strong> {{this.duration}} </h3>
+  </div>
+  {{/each}}
+</div>
+
+{{#if erroMessage}}
+  <div class="alert alert-warning text-center" role="alert">
+    The movie you're looking for is not yet in the list!
+  </div>
+{{/if}}

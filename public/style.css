@@ -1,0 +1,254 @@
+body {
+  font-family: 'Comfortaa', cursive;
+}
+
+.title-app {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.top-title {
+  color:#737373;
+  font-weight: bold;
+  font-size: 5vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; 
+}
+
+.list-word {
+  color: darkcyan;
+  font-weight: bold;
+  font-size: 2vw;
+  text-decoration: none;
+}
+
+.list-word:hover {
+  text-decoration: none;
+  color: #997300;
+}
+
+.active {
+  color: #997300;
+  border: 2px dashed darkcyan;
+  padding: 0 1vw;
+}
+
+.register-begin {
+  font-size: 1.2vw;
+}
+
+.alert {
+  /* margin-top: 2vh; */
+  margin-bottom: 0;
+}
+
+.add-movie-container {
+  margin-top: 15vh;
+  width: 100%;
+ 
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 5vh auto;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=text], select {
+  padding: 1.7vh 2vw;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 2vw;
+}
+
+input[type=submit] {
+  font-weight: bold;
+}
+
+.input-most {
+  margin: 1vh 1vw;
+}
+
+.input-login {
+  margin: 1vh 0;
+  border: 2px solid darkcyan;
+  padding: 1.7vh 2vw;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 2vw;
+}
+
+.input-text {
+  width: 60%;
+  border: 1px solid darkcyan;
+}
+
+.submit-btn-search {
+  width: 20%;
+  background-color: darkcyan;
+}
+
+.submit-btn {
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 2vw;
+}
+
+#submit-btn-create {
+  width: 100%;
+  background-color: darkcyan;
+}
+
+.celebrity-add-title {
+  color:  #4d4d4d;
+  text-align: center;
+  margin: 8vh 0;
+}
+
+.celebrity-search-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.celebrity-add-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.form-two-celeb {
+  margin-top: 7vh;
+}
+
+
+.create-form {
+  margin: 10vh 20vw;
+}
+
+#search-form {
+  margin-top: 15vh;
+}
+
+.input-create {
+  border: 5px solid darkcyan;
+}
+
+.login-page-container {
+  border: 1px solid black;
+  width: 33%;
+  margin-left: 35vw;
+  margin-top: 4vh;
+  padding: 3vh 3vw;
+  border-radius: 10px;
+  border: 2px solid #cc9900;
+}
+
+
+.sign-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+.no-login {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5vw;
+  margin-top: 1vh;
+}
+
+#submit-login {
+  background-color: darkcyan;
+}
+
+label {
+  font-size: 2vw;
+  color: #997300;
+  font-weight: bold;
+  margin-top: 1vh;
+}
+
+#register-btn {
+  background-color: #997300;
+}
+
+.find-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.item-container {
+  margin-bottom: 3vh;
+  padding: 2vh 2vw;
+  border-radius: 4px;
+  opacity: 0.9;
+}
+
+.movie {
+  width: 70vw;
+}
+
+.celeb {
+  width: 50vw; 
+}
+
+.yellow {
+  background-color: #cc9900;
+  color: #fff;
+}
+
+.cyan {
+  background-color: darkcyan;
+  color: #fff;
+}
+
+
+/* -----Password Requirement----- */
+
+.container-requirement {
+  border: 2px dashed darkcyan;
+  width: 30%;
+  box-sizing: border-box;
+  /* padding: 1vh 1vw; */
+}
+
+ul.requirement-group {
+  list-style-type: none;
+  padding-left: 0.3vw;
+}
+
+.green {
+  color: #008000;
+  font-weight: bolder;
+}
+
+.inactive {
+  color: #997300;
+  cursor: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .form-one-celeb, .movie-container-one{
+    display: flex;
+    flex-direction: column;
+  }
+}
